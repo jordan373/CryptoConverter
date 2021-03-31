@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		170256AC2613D075009F8703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170256AB2613D075009F8703 /* AppDelegate.swift */; };
 		170256AE2613D075009F8703 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170256AD2613D075009F8703 /* SceneDelegate.swift */; };
-		170256B02613D075009F8703 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170256AF2613D075009F8703 /* ViewController.swift */; };
 		170256B32613D075009F8703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170256B12613D075009F8703 /* Main.storyboard */; };
 		170256B52613D077009F8703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170256B42613D077009F8703 /* Assets.xcassets */; };
 		170256B82613D077009F8703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170256B62613D077009F8703 /* LaunchScreen.storyboard */; };
 		170256C32613D078009F8703 /* Crypto_Price_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170256C22613D078009F8703 /* Crypto_Price_TrackerTests.swift */; };
 		170256CE2613D078009F8703 /* Crypto_Price_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170256CD2613D078009F8703 /* Crypto_Price_TrackerUITests.swift */; };
+		170256E22613D172009F8703 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170256E12613D172009F8703 /* CryptoViewController.swift */; };
+		170256ED2613D649009F8703 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170256EC2613D649009F8703 /* MainViewController.swift */; };
+		170256F22613D6E7009F8703 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170256F12613D6E7009F8703 /* CryptoManager.swift */; };
+		170256F72613E2CB009F8703 /* CryptoRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170256F62613E2CB009F8703 /* CryptoRates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		170256A82613D075009F8703 /* Crypto_Price_Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto_Price_Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		170256AB2613D075009F8703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		170256AD2613D075009F8703 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		170256AF2613D075009F8703 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		170256B22613D075009F8703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		170256B42613D077009F8703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		170256B72613D077009F8703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		170256C92613D078009F8703 /* Crypto_Price_TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Crypto_Price_TrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		170256CD2613D078009F8703 /* Crypto_Price_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_Price_TrackerUITests.swift; sourceTree = "<group>"; };
 		170256CF2613D078009F8703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		170256E12613D172009F8703 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		170256EC2613D649009F8703 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		170256F12613D6E7009F8703 /* CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		170256F62613E2CB009F8703 /* CryptoRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,11 @@
 		170256AA2613D075009F8703 /* Crypto_Price_Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				170256AB2613D075009F8703 /* AppDelegate.swift */,
 				170256AD2613D075009F8703 /* SceneDelegate.swift */,
-				170256AF2613D075009F8703 /* ViewController.swift */,
-				170256B12613D075009F8703 /* Main.storyboard */,
+				170256AB2613D075009F8703 /* AppDelegate.swift */,
+				170256DE2613D085009F8703 /* Model */,
+				170256DF2613D08F009F8703 /* View */,
+				170256E02613D097009F8703 /* Controller */,
 				170256B42613D077009F8703 /* Assets.xcassets */,
 				170256B62613D077009F8703 /* LaunchScreen.storyboard */,
 				170256B92613D077009F8703 /* Info.plist */,
@@ -126,6 +133,32 @@
 				170256CF2613D078009F8703 /* Info.plist */,
 			);
 			path = Crypto_Price_TrackerUITests;
+			sourceTree = "<group>";
+		};
+		170256DE2613D085009F8703 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				170256F12613D6E7009F8703 /* CryptoManager.swift */,
+				170256F62613E2CB009F8703 /* CryptoRates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		170256DF2613D08F009F8703 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				170256B12613D075009F8703 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		170256E02613D097009F8703 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				170256E12613D172009F8703 /* CryptoViewController.swift */,
+				170256EC2613D649009F8703 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				170256B02613D075009F8703 /* ViewController.swift in Sources */,
+				170256E22613D172009F8703 /* CryptoViewController.swift in Sources */,
 				170256AC2613D075009F8703 /* AppDelegate.swift in Sources */,
+				170256F22613D6E7009F8703 /* CryptoManager.swift in Sources */,
 				170256AE2613D075009F8703 /* SceneDelegate.swift in Sources */,
+				170256F72613E2CB009F8703 /* CryptoRates.swift in Sources */,
+				170256ED2613D649009F8703 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
